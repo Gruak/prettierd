@@ -116,7 +116,7 @@ async function resolveConfig(
     useCache: false,
   });
 
-  if (!config) {
+  if (!prettierConfig) {
     prettierConfig = await tryToResolveConfigFromEnvironmentValue(
       prettier,
       editorconfig,
